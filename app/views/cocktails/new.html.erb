@@ -1,0 +1,14 @@
+<div class="container padded">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for(@cocktail) do |f| %>
+        <%= f.error_notification %>
+
+        <%= f.input :name, label:"Entrez le nom du cocktail", placeholder: "White Russian" %>
+
+        <%= f.button :submit, class: "btn btn-success btn-lg" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
