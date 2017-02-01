@@ -10,7 +10,6 @@ class DosesController < ApplicationController
     if @dose.save
       redirect_to cocktail_path(@dose.cocktail)
     else
-      raise
       render 'cocktails/show'
     end
   end
