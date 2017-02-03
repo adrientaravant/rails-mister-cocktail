@@ -5,7 +5,7 @@
         <%= f.error_notification %>
 
         <%= f.input :name, label:"Entrez le nom du cocktail", placeholder: "White Russian" %>
-
+        <%= f.input :photo, as: :attachinary %>
         <%= f.button :submit, class: "btn btn-success btn-lg" %>
       <% end %>
     </div>

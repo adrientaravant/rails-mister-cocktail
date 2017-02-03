@@ -3,7 +3,7 @@
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4">
-          <div class="card margin-top" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%=cocktail.picture%>);">
+          <div class="card margin-top" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_pic(cocktail,800,400) %>');">
             <div class="card-category"><%= cocktail.ingredients.count %> ingrédients</div>
             <div class="card-description">
               <h2><%= cocktail.name %></h2>

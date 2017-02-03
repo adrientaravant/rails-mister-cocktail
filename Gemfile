@@ -11,6 +11,10 @@ end
 #security gem
 gem 'figaro'
 
+#upload photo gem
+gem 'cloudinary', '1.1.0'
+gem "attachinary", github: "assembler/attachinary"
+gem "jquery-fileupload-rails"
 gem 'rails-controller-testing'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
